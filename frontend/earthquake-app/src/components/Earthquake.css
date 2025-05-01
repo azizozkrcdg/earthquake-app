@@ -1,0 +1,113 @@
+.earthquake-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.earthquake-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.earthquake-table th,
+.earthquake-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.earthquake-table thead {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.earthquake-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.earthquake-table tbody tr:hover {
+  background-color: #000000;
+  color : #ffffff;
+}
+
+.earthquake-title {
+  font-size: 28px;
+  color: #0f4558;
+  text-align: center;
+  margin-bottom: 20px;  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+
+/* responsive */
+.earthquake-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: auto; 
+}
+
+.earthquake-title {
+  font-size: 28px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #4a90e2;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.earthquake-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 600px; 
+
+.earthquake-table th,
+.earthquake-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.earthquake-table thead {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.earthquake-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.earthquake-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* MEDYA SORGUSU: 768px altı ekranlar (mobil) */
+@media screen and (max-width: 768px) {
+  .earthquake-table {
+    font-size: 14px;
+  }
+
+  .earthquake-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .earthquake-container {
+    padding: 10px;
+  }
+}
+}
