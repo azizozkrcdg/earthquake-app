@@ -40,5 +40,5 @@ Bu proje, [AFAD](https://deprem.afad.gov.tr/)'ın sağladığı güncel deprem v
 ### 1. Depoyu Klonlayın
 
 ```bash
-git clone https://github.com/kullanici-adi/son-depremler-app.git
-cd son-depremler-app
+git clone https://github.com/azizozkrcdg/earthquake-app.git
+cd earthquake-app
