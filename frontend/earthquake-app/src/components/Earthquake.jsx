@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import EarthquakeChart from "./EarthquakeChart";
 import "./Earthquake.css";
 
 const Earthquake = () => {
+  // Deprem verilerini tutacak state
   const [earthquakes, setEarthquakes] = useState([]);
 
   const [search, setSearch] = useState(""); // konuma göre arama
@@ -53,6 +55,8 @@ const Earthquake = () => {
           step="0.1"
         />
       </div>
+
+      <EarthquakeChart data={earthquakes} />
 
       <table className="earthquake-table">
         <thead>
