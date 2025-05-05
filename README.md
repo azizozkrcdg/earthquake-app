@@ -1,6 +1,6 @@
 # Son Depremler Uygulaması 🌍
 
-Bu proje, [AFAD](https://deprem.afad.gov.tr/)'ın sağladığı güncel deprem verilerini Node.js ile çekip API olarak sunan ve React ile bu verileri kullanıcı arayüzünde listeleyen tam stack bir web uygulamasıdır.
+Bu proje, [AFAD](https://deprem.afad.gov.tr/)'ın sağladığı güncel deprem verilerini Node.js ile çekip API olarak sunan ve React ile bu verileri kullanıcı arayüzünde listeleyen full stack bir web uygulamasıdır.
 
 ## Proje Yapısı
 
