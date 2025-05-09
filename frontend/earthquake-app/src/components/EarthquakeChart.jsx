@@ -5,10 +5,14 @@ const EarthquakeChart = ({ data }) => {
   const sortedData = [...data]
     .filter(d => d.date && d.magnitude)
     .sort((a, b) => new Date(a.date) - new Date(b.date))
-    .map((d) => ({
-      date: new Date(d.date).toLocaleDateString(),
-      magnitude: d.magnitude,
-    }));
+    .map((d) => {
+      const dateObj = new Date(d.date)
+      return {
+        time: dateObj.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}),
+        magnitude: d.magnitude,
+      }
+      
+    });
 
   return (
     <div style={{ width: '100%', height: 300, marginTop: '30px' }}>
@@ -16,7 +20,7 @@ const EarthquakeChart = ({ data }) => {
       <ResponsiveContainer>
         <LineChart data={sortedData}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="date" />
+          <XAxis dataKey="time" />
           <YAxis domain={['auto', 'auto']} />
           <Tooltip />
           <Line type="monotone" dataKey="magnitude" stroke="#ff7300" strokeWidth={2} />
